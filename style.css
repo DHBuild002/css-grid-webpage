@@ -62,10 +62,11 @@ html, body{
   grid-gap: 10px;
   margin: 55px;
   }
-}
-@media (max-width: 1500px){
-  projects_container > * > p {
+  .projects_container > * > p {
     font-size: 0.5em;
+  }
+  h1 {
+    text-align: center;
   }
 }
 /* -- - --- - --- --- --- -- */
@@ -119,7 +120,19 @@ html, body{
   margin: 10px;
 }
 
-
+.twitter_100daysofcode {
+  display: grid;
+  grid-template-columns: 1 / -1;
+  align-items: center;
+  background-image: radial-gradient(#64a6f9, #64a6f9);
+  grid-row: 3 / 4;
+    margin: 0px;
+    border: 1px solid black;
+    justify-items: center;
+}
+.twitter_100daysofcode > div {
+  color: white;
+}
 /* -- - --- - --- --- --- -- */
 
 p {
@@ -127,6 +140,7 @@ p {
   font-weight: 700;
   font-size: .9em;
   text-align: center;
+  color: black;
 }
 .project {
   font-size: 2em;
