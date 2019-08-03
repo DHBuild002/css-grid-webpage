@@ -86,11 +86,10 @@ html, body{
     grid-gap: 7px;
 }
 .links > a > div:hover {
-  border-radius: 10px;
-  border: 1px solid #323a77f2;
-  background-image: none;
-  color: none;
-  transition: 0.3s;
+    border-radius: 3px;
+    border: 1px solid #323a77f2;
+    background-color: #e5efff;
+    transition: 0.3s;
 }
 .links > a > div {
   border: 1px solid lightgrey;
