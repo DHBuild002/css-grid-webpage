@@ -1,2 +1,2 @@
 You can view this webpage here:
-https://dhbuild002.github.io/Personal_Projects/
+https://dhbuild002.github.io/Personal-Projects/
