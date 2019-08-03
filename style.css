@@ -77,13 +77,15 @@ html, body{
 
 /* Social Navbar */
 
+
 .links {
     height: 100%;
     display: grid;
-    grid-column: 10 / 13;
-    grid-template: repeat(1, 1fr) / repeat(3, auto);
+    grid-column: 7 / 9;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     align-items: center;
-    grid-gap: 7px;
+    grid-gap: 5px;
+    margin-right: 45px;
 }
 .links > a > div:hover {
     border-radius: 3px;
