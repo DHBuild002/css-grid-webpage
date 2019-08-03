@@ -46,7 +46,7 @@ html, body{
   display: inline-grid;
   border: none;
 }
-.projects_container > div > a {
+.projects_container > div > a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +67,7 @@ html, body{
   }
   h1 {
     text-align: center;
+    color: white;
   }
 }
 /* -- - --- - --- --- --- -- */
@@ -131,7 +132,7 @@ html, body{
     justify-items: center;
 }
 .twitter_100daysofcode > div {
-  color: white;
+  color: black;
 }
 /* -- - --- - --- --- --- -- */
 
@@ -140,7 +141,6 @@ p {
   font-weight: 700;
   font-size: .9em;
   text-align: center;
-  color: black;
 }
 .project {
   font-size: 2em;
