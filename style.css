@@ -55,7 +55,7 @@ html, body{
   color: #323a77f2;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1650px){
 .projects_container {
   display: grid;
   grid-template-columns: repeat(1, minmax(150px, 1fr));
