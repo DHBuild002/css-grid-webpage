@@ -4,6 +4,8 @@ html, body{
   margin: 0;
   font-family: 'Nanum Gothic', sans-serif;
   box-sizing: border-box;
+  font-size: .9em;
+  text-align: center;
 }
 * > a {
   cursor: pointer;
@@ -24,8 +26,9 @@ html, body{
 }
 .content {
   background-color: white;
-  grid-column: 1 / -1;
+  grid-column: 1 / 13;
   grid-row: 3 / 4;
+  margin: 10px;
 }
 .twitter_100daysofcode {
   grid-column: 1 / -1;
@@ -44,14 +47,6 @@ html, body{
 }
 
 /* -- - --- - --- --- --- -- */
-
-.projects_container {
-  display: grid;
-  grid-gap: 50px;
-  margin: 50px;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-template-rows: repeat(1, minmax(100px, auto-fit));
-}
 .projects_container > div {
   display: inline-grid;
   border: none;
@@ -63,22 +58,31 @@ html, body{
   border-radius: 4px;
   background-color: lightgrey;
   color: #323a77f2;
+  text-decoration: none;
 }
 
-@media (max-width: 1650px){
-.projects_container {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(150px, 1fr));
-  grid-template-rows: repeat(3, minmax(100px, 1fr));
-  grid-gap: 10px;
-  margin: 20px;
-  }
-  .projects_container > * > p {
+/* Responsive-ness */
+/* Mobile */
+@media (max-width: 1399.5px){
+  .projects_container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(400px, 1fr));
+    grid-gap: 10px;
+    margin: 20px;
+    }
+}
+/* Desktop */
+@media (min-width: 1400px){
+  .projects_container > * > a {
     font-size: 0.5em;
   }
-  h1 {
-    text-align: center;
-
+  .projects_container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
+      grid-template-rows: repeat(1, minmax(400px, 1fr));
+      grid-gap: 10px;
+      margin: 20px;
   }
 }
 
@@ -86,22 +90,24 @@ html, body{
 
 /* -- - --- Project Linkc color -- --- -- */
 
-#ht > a {
+.project:nth-child(1) > a {
   background-color: #f76b6b;
 }
-#dice-roll > a {
+.project:nth-child(2) > a {
   background-color: pink;
 }
-#clock-date > a {
+.project:nth-child(3) > a {
   background-color: lightblue;
 }
 
-/* -- - --- - --- --- --- -- */
-
-.projects_container > div > a:hover {
-  background-color: #323a77f2;
-  color: white;
+.project > a:hover {
+    background-color: #3a427c;
+    color: white;
+    transition: .9;
 }
+
+
+/* -- - --- - --- --- --- -- */
 
 /* Social Navbar */
 
@@ -121,6 +127,7 @@ html, body{
     background-color: #e5efff;
     transition: 0.3s;
 }
+
 .links > a > div {
   border: 1px solid lightgrey;
   padding: 5px;
@@ -135,29 +142,11 @@ html, body{
     margin-left: auto;
     margin-right: auto;
 }
-/* Devices Less then 992px */
-.mobile {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-column: 1 / -1;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid blue;
-  padding: 0px;
-  margin: 10px;
-}
 
 .twitter_100daysofcode > div {
   color: black;
 }
 /* -- - --- - --- --- --- -- */
-
-p {
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: .9em;
-  text-align: center;
-}
 h1{
   color: white;
 }
