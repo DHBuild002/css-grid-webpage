@@ -16,11 +16,11 @@ html, body{
   grid-template: 50px 250px auto auto 75px / repeat(12, 1fr);
 }
 .header {
-  background-color: white;
+  background-color: #3C447E;
   grid-column: 1 / -1;
 }
 .subheader{
-  background-color: #323a77f2;
+  background-color: #93E1D8;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
 }
@@ -30,18 +30,18 @@ html, body{
   grid-row: 3 / 4;
   margin: 10px;
 }
-.twitter_100daysofcode {
+.announcement_banner {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
   align-items: center;
-  background-image: radial-gradient(#64a6f9, #64a6f9);
+  background-image: radial-gradient(#DDFFF7, #DDFFF7);
   grid-template-rows: repeat(1, 1fr);
   grid-auto-rows: 50px;
   margin: 0px;
   padding: 100px;
 }
 .footer {
-  background-color: #323a77f2;
+  background-color: #3C447E;
   grid-column: 1 / -1;
   grid-row: 5 / -1;
 }
@@ -92,18 +92,12 @@ html, body{
 
 /* -- - --- Project Linkc color -- --- -- */
 
-.project:nth-child(1) > a {
-  background-color: #f76b6b;
-}
-.project:nth-child(2) > a {
-  background-color: pink;
-}
-.project:nth-child(3) > a {
-  background-color: lightblue;
+.project > a {
+  background-color: blue;
 }
 
 .project > a:hover {
-    background-color: #3a427c;
+    background-color: #93E1D8;
     color: white;
     transition: .9;
 }
@@ -145,8 +139,32 @@ html, body{
     margin-right: auto;
 }
 
-.twitter_100daysofcode > div {
+/* announcement_banner */
+.button-area {
+  margin-top: 65px;
+}
+.announcement_banner > h1 {
+  color:  #AA4465;
+}
+.announcement_banner > p {
+  color:  black;
+  font-size: 18px;
+}
+.press-me {
+  padding: 20px;
+  background-color: #AA4465;
+  border: 1px solid grey;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+.press-me:hover {
+  border-radius: 3px;
+  border: 1px solid #323a77f2;
+  background-color: #FFA69E;
   color: black;
+  transition: 0.3s;
 }
 
 /* -- - --- - --- --- --- -- */
@@ -162,6 +180,7 @@ h1{
 .overlay_text {
   display: flex;
   letter-spacing: .25em;
+  text-shadow: 0px 1px black;
   justify-content: center;
   align-items: center;
   color: white;
